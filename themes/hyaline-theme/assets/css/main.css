@@ -25,18 +25,20 @@ body {
   align-items: center;
 }
 
-
 article {
   margin: 1em;
 }
 
-
-/* footer { } */
-
 a {
   color: var(--link-color);
-  text-decoration: none;
   font-weight: 600;
+  /* Add transition for color */
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  /* Change color on hover */
+  color: var(--link-hover-color);
 }
 
 h1 {
