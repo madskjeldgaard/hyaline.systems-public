@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div class="front-page">
+
+<article>
+
+{{/* Add title of site if this is the home page, else use the post's title */}}
+
+<h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</h1>
+
+{{/* Add subtitle if there is one */}}
+{{ with .Params.subtitle }}
+  <h2>{{ . }}</h2>
+  {{ end }}
+
+{{/* Add the site's description if this is the home page, else use the post's description */}}
+
+<p>{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}</p>
+
+{{/* Content */}}
+<section >
+{{ .Content }}
+</section>
+
+</article>
+</div>
+
+{{ end }}

@@ -1,0 +1,13 @@
+baseURL = 'https://hyaline.systems/'
+languageCode = 'en-us'
+title = 'Hyaline.Systems'
+theme = "hyaline-theme"
+
+# Site parameters
+[params]
+
+# Sub title
+subtitle = ''
+
+# Description
+description = ''

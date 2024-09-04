@@ -1,0 +1,71 @@
+:root {
+  /* --bg-color: rgb(80, 99, 168); */
+  --bg-color: rgb(200, 201, 197);
+  --text-color: rgb(80, 99, 168);
+  /* --text-color: rgb(200, 201, 197); */
+  --link-color: var(--text-color);
+  --link-hover-color: #00f;
+  --border-color: #ddd;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 1rem;
+  /* max-width: 768px; */
+
+
+  letter-spacing: 0.75px;
+  /* Slight increase in letter spacing for readability */
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+article {
+  margin: 1em 5%;
+  padding: 1em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+/* .front-page { */
+
+/*   font-size: 48px; */
+
+/*   h1 { */
+/*     font-size: 2em; */
+/*     font-weight: normal; */
+/*   } */
+/* } */
+
+section {
+  margin-bottom: 4rem;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    /* font-size: 20px; */
+  }
+}
