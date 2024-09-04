@@ -4,6 +4,7 @@ date: 2022-01-01T00:00:00-00:00
 draft: false
 ---
 
+
 {{< sinewave animationSpeed="20s" >}}
 
 ## Hyaline.Systems*
@@ -14,7 +15,7 @@ We specialize in *software and hardware for music, art and audio*:
 
 - Creative coding (SuperCollider and Pure Data etc).
 - Electronic music instrument design
-- Interactive arts and real-time audio
+- Interactive arts, installations and real-time audio
 - Electronics design + Arduino, Raspberry Pi, Linux and embedded
 - Audio and music production, including spatial audio and generative music
 - Low-level programming in C++, Juce and Rust
