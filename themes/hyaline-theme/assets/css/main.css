@@ -15,12 +15,11 @@ body {
   font-size: 18px;
   line-height: 1.75;
 
-  letter-spacing: 0.75px;
   /* Slight increase in letter spacing for readability */
+  letter-spacing: 0.75px;
 }
 
 .front-page {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,17 +27,11 @@ body {
 
 
 article {
-  margin: 2rem;
-  padding: 1rem;
+  margin: 1em;
 }
 
-header {
-  margin: 2rem 0;
-}
 
-footer {
-  margin: 2rem 0;
-}
+/* footer { } */
 
 a {
   color: var(--link-color);
@@ -56,8 +49,4 @@ h2 {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  body {
-    /* font-size: 20px; */
-  }
-}
+@media (max-width: 768px) {}
