@@ -17,7 +17,7 @@ We specialize in *software and hardware for music, art and audio*:
 - Interactive arts and real-time audio
 - Electronics design + Arduino, Raspberry Pi, Linux and embedded
 - Audio and music production, including spatial audio and generative music
-- Low-level programming in C++ and Rust
+- Low-level programming in C++, Juce and Rust
 - Teaching/talks
 
 ... among other things.
