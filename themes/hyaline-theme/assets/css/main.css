@@ -15,8 +15,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-size: 20px;
-  line-height: 1.33;
-  margin: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
   /* max-width: 768px; */
 
   letter-spacing: 0.75px;
@@ -33,16 +33,15 @@ body {
 
 article {
   padding: 1rem;
-
 }
 
 
 header {
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
 }
 
 footer {
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
 }
 
 a {
