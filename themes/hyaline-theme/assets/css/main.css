@@ -15,37 +15,46 @@ body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-size: 20px;
-  line-height: 1.8;
+  line-height: 1.33;
   margin: 1rem;
   /* max-width: 768px; */
-
 
   letter-spacing: 0.75px;
   /* Slight increase in letter spacing for readability */
 }
 
+.front-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+article {
+  padding: 1rem;
+
+}
+
+
 header {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 footer {
-  margin-top: 1rem;
-}
-
-article {
-  margin: 1em 5%;
-  padding: 1em;
+  /* margin-top: 1rem; */
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 2em;
-  font-weight: normal;
-  /* font-style: italic; */
+  /* font-weight: normal; */
+  font-style: italic;
 }
 
 /* .front-page { */
@@ -59,9 +68,47 @@ h1 {
 /* } */
 
 section {
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
+.sine-wave-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sine-wave-wrapper {
+  display: flex;
+  width: 200%;
+  /* Double the width to accommodate two SVGs */
+  animation: move-sine-wave 30s linear infinite;
+}
+
+.sine-wave {
+  width: 50%;
+  /* Each SVG takes up half the width of the wrapper */
+}
+
+.sine-wave path {
+  stroke: pink !important;
+  /* Change the color of the sine wave */
+  stroke-width: 5;
+  /* Adjust the thickness of the sine wave */
+  stroke-dasharray: 10;
+  /* Create a dashed line effect */
+  stroke-linecap: round;
+  /* Make the ends of the dashes rounded */
+}
+
+@keyframes move-sine-wave {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 /* Mobile */
 @media (max-width: 768px) {

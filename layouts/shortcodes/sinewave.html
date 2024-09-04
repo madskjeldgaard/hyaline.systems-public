@@ -1,0 +1,65 @@
+{{/*
+  Shortcode to generate a sine wave animation using SVG and CSS.
+
+  Usage:
+  {{< sine-wave >}}
+  {{< sine-wave animationSpeed="30s" strokeColor="#5063A8" strokeWidth="5" >}}
+
+  Parameters:
+  - animationSpeed: The speed of the sine wave animation. Default is "30s".
+  - strokeColor: The color of the sine wave. Default is "#5063A8".
+  - strokeWidth: The thickness of the sine wave. Default is "5".
+
+*/}}
+
+{{ $animationSpeed := .Get "animationSpeed" | default "30s" }}
+{{ $strokeColor := .Get "strokeColor" | default "#5063A8" }}
+{{ $strokeWidth := .Get "strokeWidth" | default "5" }}
+{{ $uniqueID := (printf "sinewave-%d" (now.UnixNano)) }}
+
+<style>
+#{{ $uniqueID }} .sine-wave-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#{{ $uniqueID }} .sine-wave-wrapper {
+  display: flex;
+  width: 200%; /* Double the width to accommodate two SVGs */
+  animation: move-sine-wave-{{ $uniqueID }} {{ $animationSpeed }} linear infinite;
+}
+
+#{{ $uniqueID }} .sine-wave {
+  width: 50%; /* Each SVG takes up half the width of the wrapper */
+}
+
+#{{ $uniqueID }} .sine-wave path {
+  stroke: {{ $strokeColor }} !important; /* Change the color of the sine wave */
+  stroke-width: {{ $strokeWidth }}; /* Adjust the thickness of the sine wave */
+  stroke-dasharray: 10; /* Create a dashed line effect */
+  stroke-linecap: round; /* Make the ends of the dashes rounded */
+}
+
+@keyframes move-sine-wave-{{ $uniqueID }} {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+<div id="{{ $uniqueID }}">
+  <div class="sine-wave-container">
+    <div class="sine-wave-wrapper">
+      <svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="sine-wave" d="M0 100 Q 50 50, 100 100 T 200 100 T 300 100 T 400 100 T 500 100 T 600 100 T 700 100 T 800 100 T 900 100 T 1000 100 T 1100 100 T 1200 100" stroke="{{ $strokeColor }}" stroke-width="{{ $strokeWidth }}" fill="none"/>
+      </svg>
+      <svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="sine-wave" d="M0 100 Q 50 50, 100 100 T 200 100 T 300 100 T 400 100 T 500 100 T 600 100 T 700 100 T 800 100 T 900 100 T 1000 100 T 1100 100 T 1200 100" stroke="{{ $strokeColor }}" stroke-width="{{ $strokeWidth }}" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</div>

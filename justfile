@@ -1,12 +1,3 @@
-add_release:
-  ./themes/exformal/scripts/commands.sh add_release
-
-add_artist:
-  ./themes/exformal/scripts/commands.sh add_artist
-
-add_text:
-  ./themes/exformal/scripts/commands.sh add_text
-
 build:
     hugo --cleanDestinationDir --verbose --logLevel info
 
