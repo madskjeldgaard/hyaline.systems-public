@@ -12,15 +12,19 @@ A creative technology studio based in Copenhagen, Denmark.
 
 We specialize in *software and hardware for music, art and audio*: 
 
-- Creative coding (SuperCollider and Pure Data among other things).
+- Creative coding (SuperCollider and Pure Data etc).
 - Electronic music instrument design
 - Interactive arts and real-time audio
 - Electronics design + Arduino, Raspberry Pi, Linux and embedded
-- Audio and music production, including spatial audio
-- Generative music
+- Audio and music production, including spatial audio and generative music
+- Low-level programming in C++ and Rust
 - Teaching/talks
 
-Get in touch ⊂(◉‿◉)つ
+... among other things.
+
+Feel like getting in touch? 
+
+Please do, we'd love to hear from you! ⊂(◉‿◉)つ
 
 {{< cloakemail "hello@hyaline.systems" >}}.
 
