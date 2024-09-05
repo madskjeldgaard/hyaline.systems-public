@@ -7,7 +7,7 @@ draft: false
 
 {{< sinewave animationSpeed="20s" >}}
 
-## Hyaline.Systems*
+## hyaline.systems*
 
 A creative technology studio based in Copenhagen, Denmark.
 

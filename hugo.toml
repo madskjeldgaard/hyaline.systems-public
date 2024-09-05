@@ -1,6 +1,6 @@
 baseURL = 'https://hyaline.systems/'
 languageCode = 'en-us'
-title = 'Hyaline.Systems'
+title = 'hyaline.systems'
 theme = "hyaline-theme"
 
 # Site parameters

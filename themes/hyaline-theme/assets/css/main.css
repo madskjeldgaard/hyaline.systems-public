@@ -4,6 +4,11 @@
   --link-color: var(--text-color);
   --link-hover-color: #00f;
   --border-color: #ddd;
+
+  --glow-color: rgba(255, 154, 128, 0.9);
+  /* Adjusted to match text color */
+  --glow-color-strong: rgba(80, 99, 168, 1.0);
+  /* Stronger glow color */
 }
 
 body {
@@ -34,12 +39,32 @@ a {
   font-weight: 600;
   /* Add transition for color */
   transition: color 0.3s ease-in-out;
+
+  animation: glow 2.5s infinite alternate;
 }
 
 a:hover {
   /* Change color on hover */
+
   color: var(--link-hover-color);
+
+  animation: glow 0.5s infinite ease-in-out;
 }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color), 0 0 15px var(--glow-color);
+  }
+
+  50% {
+    text-shadow: 0 0 10px var(--glow-color-strong), 0 0 20px var(--glow-color-strong), 0 0 30px var(--glow-color-strong);
+  }
+
+  100% {
+    text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color), 0 0 15px var(--glow-color);
+  }
+}
+
 
 h1 {
   font-size: 2em;
