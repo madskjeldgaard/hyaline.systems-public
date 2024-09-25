@@ -1,3 +1,7 @@
 public
 .DS_Store
 resources/_gen
+node_modules/
+package-lock.json
+themes/hyaline-theme/node_modules/
+themes/hyaline-theme/package-lock.json

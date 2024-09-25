@@ -1,0 +1,13 @@
+{{ $time := now }}
+{{ $styles := resources.Get "css/styles.scss"
+    | toCSS
+    | postCSS (dict "config" "./assets/css/postcss.config.js")
+    | resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
+}}
+
+{{ if hugo.IsServer }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+    {{ $styles := $styles | minify | fingerprint | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ end }}
