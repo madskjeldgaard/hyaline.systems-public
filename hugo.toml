@@ -11,3 +11,14 @@ subtitle = ''
 
 # Description
 description = ''
+
+# Menu
+[[menu.main]]
+name = "hyaline.systems"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "blog"
+url = "/posts"
+weight = 2

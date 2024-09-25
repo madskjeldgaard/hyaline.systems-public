@@ -75,5 +75,50 @@ h2 {
   font-style: italic;
 }
 
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.33rem;
+  background-color: var(--text-color);
+}
+
+nav {
+  flex-grow: 2;
+  /* Allows the nav to take up remaining space and center the menu */
+  text-align: right;
+  /* Centers the menu items */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* Remove default margin */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 /* Mobile */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  /* .hamburger-menu { */
+  /*   display: flex; */
+  /*   margin-top: 1em; */
+  /* } */
+
+}
